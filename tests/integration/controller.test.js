@@ -27,7 +27,7 @@ describe('Controller-Service Integration Tests', () => {
         // Assert that the service's todos array has a length of 1.
         expect(toDoList.length).toBe(1);
         // Assert that the text of the first todo in the service matches the input.
-        expect(toDoList.getTodos()[0]).toBe('Do the gym');
+        expect(toDoList[0].text).toBe('Do the gym');
     });
 
     test('handleRemoveTodo should call service.removeTodo and update the model', () => {
